@@ -11,4 +11,11 @@ const sayHello = () => {
   console.log('hello trybers');
 }
 
-setTimeout(sayHello, 1000);
+// setTimeout(sayHello, 1000);
+
+// ------------------------------------
+const say =  () => {
+  console.log(`Olá,Walace!`);
+}
+//return 
+say(sayHello());
