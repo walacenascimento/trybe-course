@@ -8,12 +8,12 @@
 // Ela deve retornar o valor do respectivo parâmetro, neste caso:
 // Acordando!!
 
-const acordar = () => `Acordar!!`;
+const acordar = () => `Acordando!!`;
 const bora = () => `Bora tomar café!!`; 
 const partiu = () => `Partiu dormir!!` ;
 
 const doingThings = (exemplo) => {
-  console.log(exemplo());
+  console.log(exemplo())
 }
 
 doingThings(acordar);
