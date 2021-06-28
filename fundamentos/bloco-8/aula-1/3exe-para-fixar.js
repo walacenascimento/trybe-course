@@ -7,16 +7,37 @@
 // doingThings(wakeUp);
 // Ela deve retornar o valor do respectivo parâmetro, neste caso:
 // Acordando!!
+function acordar() { //  Função tradicional 
+  return `Acordando!!`;
+}
+console.log(acordar());
+// -------------------------------------------
 
-const acordar = () => `Acordando!!`;
-const bora = () => `Bora tomar café!!`; 
-const partiu = () => `Partiu dormir!!` ;
+const acordar = () => { // Aroow Function
+  return `Acordando!!`;
+}
+const bora = () => {
+  return `Bora tomar café!!`;
+}
+const partiu = () => {
+  return `Partiu dormir!!`;
+}
 
-const doingThings = (exemplo) => {
-  console.log(exemplo())
+const doingThings = (callback) => { //  Função de ordem superior
+  console.log(callback());
 }
 
 doingThings(acordar);
 doingThings(bora);
 doingThings(partiu);
 
+// O mesmo bloco de código refatorado
+// const acordar = () => `Acordando!!`
+// const bora = () => `Bora tomar café!!`
+// const partiu = () => `Partiu dormir!!`
+
+// const doingThings = (callback) => {console.log(callback());}
+
+// doingThings(acordar);
+// doingThings(bora);
+// doingThings(partiu);
