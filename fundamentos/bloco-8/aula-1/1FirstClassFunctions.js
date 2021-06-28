@@ -7,15 +7,15 @@
 
 // Passar funções como argumento para outras funções:
 
-const sayHello = () => {
-  console.log('hello trybers');
-}
+// const sayHello = () => {
+//   console.log('hello trybers');
+// }
 
-// setTimeout(sayHello, 1000);
+// // setTimeout(sayHello, 1000);
 
-// ------------------------------------
-const say =  () => {
-  console.log(`Olá,Walace!`);
-}
-//return 
-say(sayHello());
+// // ------------------------------------
+// const say =  () => {
+//   console.log(`Olá,Walace!`);
+// }
+// //return 
+// say(sayHello());
