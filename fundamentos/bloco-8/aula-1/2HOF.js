@@ -1,17 +1,10 @@
 /* Construímos uma função que simula o registro de uma nova pessoa e passamos como argumento de uma segunda função. Logo, addEventListener é uma HOF.
------------------------------------------------------------------------------*/
-
-// // const button = document.querySelector('#signup-button');
-// const registerUser = () => {
-//   console.log('Registrado com sucesso!');
-// };
-
-// // button.addEventListener('click', registerUser);
-// registerUser();
+  const button = document.querySelector('#signup-button');
+  button.addEventListener('click', registerUser);  */
 
 // Funções de saudação HOF
 const saudacaoFormal = (colega) => {
-  return `Olá, ${colega} tudo bem com você? Espero que sim!`;
+  return `Olá ${colega}, tudo bem com você? Espero que sim!`;
 }
 
 const saudacaoDeMauHumor = (colega) =>{
