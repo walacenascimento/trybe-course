@@ -1,0 +1,19 @@
+		React / Redux
+Dica: Instalar a extensão Redux Devtools
+
+	instalar a biblioteca: npm install react-redux
+	criar a aplicação no React: npx create-reacte-app nome da aplicação(my-app)
+	instalando as dependências: npm install --save redux react-redux
+	 
+1 - Criando a Store. (Pensando na criação de arquivo src/store/index.js)
+
+	import { createStore, combineReducers } from 'redux';
+	import { composeWithDevTools } from 'redux-devtools-extension'; // para configurar a extensão Redux Devtools 
+	import rootReducer from '../reducers'  // a função createStore sempre receberá como parâmentro um rootReducer. O rooteReducer deve ser 							//criado no arquivo reducer/index.js e importado aqui na Store.
+	
+	const store = createStore(rooteReducer, composeWithDevTools());  // criando a store e configurando a extensão Redux Devtools
+	
+	export default store;
+	
+
+2 - Criando o Reducer
